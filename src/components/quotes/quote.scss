@@ -1,0 +1,59 @@
+.quote-header {
+  border: solid 1px #ccc;
+  margin: 20px 0;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  h1 {
+    font-size: 14px;
+    em {
+      font-size: 12px;
+      font-weight: 400;
+      padding-left: 10px;
+    }
+  }
+  p {
+    font-size: 13px;
+  }
+}
+.quotes {
+  list-style: none;
+  border: solid 1px #ccc;
+  li {
+    display: flex;
+    padding: 5px;
+    border-bottom: solid 1px #ccc;
+    &:last-child {
+      border-bottom: 0;
+    }
+    button {
+      width: 25px;
+      height: 25px;
+      background-color: transparent;
+      border: solid 1px #ccc;
+      cursor: pointer;
+    }
+    span:not(.quote) {
+      width: 25px;
+      height: 25px;
+      text-align: center;
+      line-height: 1.5;
+    }
+    .quote {
+      flex: 1;
+      line-height: 1.3;
+      padding-left: 10px;
+    }
+  }
+}
+
+// Dark Theme
+.darkTheme {
+  .quotes {
+    li {
+      button {
+        color: #fff;
+      }
+    }
+  }
+}

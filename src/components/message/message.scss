@@ -1,0 +1,16 @@
+.message {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+  font-weight: 300;
+  padding: 20px;
+  &.error {
+    color: #f00;
+  }
+  span {
+    font-size: 25px;
+    font-weight: 600;
+    padding-right: 10px;
+  }
+}

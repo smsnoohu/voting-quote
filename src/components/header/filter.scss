@@ -1,0 +1,149 @@
+.filter-wrapper {
+  display: flex;
+  border: 0;
+  .field {
+    display: flex;
+    flex-flow: column-reverse;
+    flex: 2;
+    border: 0;
+    border-bottom: 1px solid #ccc;
+    height: 40px;
+    background-color: #fff;
+    label,
+    input {
+      transition: all 0.2s;
+      touch-action: manipulation;
+    }
+
+    ::-webkit-input-placeholder {
+      opacity: 0;
+      transition: inherit;
+    }
+
+    input:focus::-webkit-input-placeholder {
+      opacity: 1;
+    }
+
+    input {
+      font-size: 1rem;
+      border: 0;
+      font-family: inherit;
+      -webkit-appearance: none;
+      border-radius: 0;
+      padding: 5px;
+      cursor: text;
+
+      &:focus {
+        outline: 0;
+      }
+
+      &:placeholder-shown {
+        + label {
+          cursor: text;
+          max-width: 100%;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+          transform-origin: left bottom;
+          transform: translate(10px, 1rem);
+          font-size: 15px;
+          text-transform: uppercase;
+          letter-spacing: 0.05em;
+          color: #333;
+        }
+      }
+
+      &:not(:placeholder-shown),
+      &:focus {
+        + label {
+          transform: translate(0, 0);
+          font-size: 11px;
+          cursor: pointer;
+          text-transform: capitalize;
+        }
+      }
+    }
+  }
+  select {
+    border: solid 1px #ccc;
+    border-width: 0 0 1px 1px;
+    padding: 0 10px;
+
+    &:focus {
+      outline: 0;
+    }
+  }
+
+  .theme-switch-wrapper {
+    border: solid 1px #ccc;
+    border-width: 0 0 1px 1px;
+    display: flex;
+    align-items: center;
+    em {
+      margin: 0 10px;
+    }
+    .theme-switch {
+      display: inline-block;
+      height: 34px;
+      position: relative;
+      width: 60px;
+      .switch {
+        display: none;
+        &:checked + .slider {
+          background-color: #66bb6a;
+          &:before {
+            transform: translateX(26px);
+          }
+        }
+      }
+      .slider {
+        background-color: #ccc;
+        bottom: 0;
+        cursor: pointer;
+        left: 0;
+        position: absolute;
+        right: 0;
+        top: 0;
+        transition: 0.4s;
+        &:before {
+          background-color: #fff;
+          bottom: 4px;
+          content: "";
+          height: 26px;
+          left: 4px;
+          position: absolute;
+          transition: 0.4s;
+          width: 26px;
+        }
+        &.round {
+          border-radius: 34px;
+          &:before {
+            border-radius: 50%;
+          }
+        }
+      }
+    }
+  }
+}
+
+// Dark Theme
+
+.darkTheme {
+  .filter-wrapper {
+    .field {
+      background-color: #000;
+      input {
+        background-color: #000;
+        color: #fff;
+        &:placeholder-shown {
+          + label {
+            color: #fff;
+          }
+        }
+      }
+    }
+    select {
+      background-color: #000;
+      color: #fff;
+    }
+  }
+}

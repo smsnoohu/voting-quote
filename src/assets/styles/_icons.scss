@@ -1,0 +1,30 @@
+@font-face {
+  font-family: "FontAwesome";
+  font-style: normal;
+  font-weight: 400;
+  font-display: auto;
+  src: url("../icon-fonts/fa-regular-400.eot");
+  src: url("../icon-fonts/fa-regular-400.eot?#iefix")
+      format("embedded-opentype"),
+    url("../icon-fonts/fa-regular-400.woff2") format("woff2"),
+    url("../icon-fonts/fa-regular-400.woff") format("woff"),
+    url("../icon-fonts/fa-regular-400.ttf") format("truetype"),
+    url("../icon-fonts/fa-regular-400.svg#fontawesome") format("svg");
+}
+.fa {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  line-height: 1;
+  font-family: "FontAwesome";
+  font-weight: 400;
+}
+.fa-thumbs-up:before {
+  content: "\f164";
+}
+.fa-thumbs-down:before {
+  content: "\f165";
+}
