@@ -1,24 +1,24 @@
-# React JS GitHub Repositories Search
+# React JS Ron Swanson Quote Search and Vote for the quotes
 
-A simple Github repositories and programming languages search App developed using ReactJS, React Hooks, SCSS.
+A simple Ron Swanson Quote and vote for the quotes developed using ReactJS, React Hooks, SCSS.
 
 ## Usage
 
-This project uses the Github API to fetch repositories and programming languages. It has a very simple and elegent design. Doing a search for a user is as simple as typing in the repository name in the search box to get the repositories and also filter using to select language from language selectbox.
+This project uses the Ron Swanson Quote API to fetch quotes and vote the quotes. It has a very simple and elegent design. Doing a search for a quotes is as simple as typing in the quote in the search box to get the quotes and also list out number of quotes per page using to select number of results from selectbox.
 
 ## Get from GitHub
 
 #### HTTP
 
-https://github.com/smsnoohu/repo-search.git
+https://github.com/smsnoohu/voting-quote.git
 
 #### SSH
 
-git@github.com:smsnoohu/repo-search.git
+git@github.com:smsnoohu/voting-quote.git
 
 #### GitHub CLI
 
-gh repo clone smsnoohu/repo-search
+gh repo clone smsnoohu/voting-quote
 
 ## Installation
 
@@ -59,7 +59,7 @@ Your will find compiled files inside build folder
 
 ## Author
 
-https://github.com/smsnoohu/repo-search/
+https://github.com/smsnoohu/voting-quote
 
 ## License
 
